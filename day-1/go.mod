@@ -1,0 +1,3 @@
+module github.com/korziee/2023-advent-of-code/day-1
+
+go 1.21.4
