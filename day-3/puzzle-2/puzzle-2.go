@@ -104,10 +104,8 @@ func main() {
 			// now iterate through cols in each row, looking for match
 			for row := p.row - 1; row <= p.row+1; row += 1 {
 				for col := (p.col - 1) - i; col <= p.col+1; col += 1 {
-					// fmt.Println("looking at row x col", row, col)
 					if gears[fmt.Sprintf("%d,%d", row, col)] {
 						gearNeighbours[fmt.Sprintf("%d,%d", row, col)] = append(gearNeighbours[fmt.Sprintf("%d,%d", row, col)], p)
-						// fmt.Println("found match")
 						parts = append(parts, p)
 						break thing
 					}
